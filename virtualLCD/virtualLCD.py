@@ -61,3 +61,7 @@ class virtualLCD(object):
 
     def set_cursor(self,x,y):
         self.cursor = ((y*self.cols)+x)
+
+    def read(self):
+        return self.buffer
+    
